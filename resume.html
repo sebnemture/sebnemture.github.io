@@ -19,8 +19,7 @@
                   
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="media.html" data-target="#media"item current-page">
+              <li class="nav-item current-page">
                 <a class="nav-link active" href="resume.html" data-target="#resume">
                   
                   <span>Resume</span>
@@ -55,7 +54,22 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html" data-target="#contact">ogin::before {
+                <a class="nav-link" href="contact.html" data-target="#contact">
+          
+          <span>Contact</span>
+          
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+    .icon::before {
+      display: none;
+    }
+
+    .login::before {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       content: "\f007";
@@ -65,6 +79,10 @@
       font-family: "Font Awesome 5 Free";
       font-weight: 400;
       content: "\f1ea";
+    }
+
+    .current-page a {
+      color: #0000CD !important;
     }
   </style>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -531,12 +549,31 @@
 
     
 
-    <h1 style="margin-bottom:30px;">Resume</h1>
+    <h1 style="margin-bottom: 30px;">Resume</h1>
 
-        <embed src="sebnem_files/SebnemTureResume.pdf" width=464px" height="600px" />
-        <div class="article-wrap" style="line-height:1.5;">
-          <p style="margin-bottom:0;"><a href="sebnem_files/SebnemTureResume.pdf" target="_blank">Click here</a> for my latest resume in pdf format.</p>    
-        </div><!-- /.article-wrap -->
+    <!-- PDF Viewer Container -->
+    <div class="pdf-container" style="position: relative; width: 100%; max-width: 800px; margin: 0 auto 20px;">
+        <div style="position: relative; padding-bottom: 129.4%; height: 0; overflow: hidden; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+            <iframe src="sebnem_files/SebnemTureResume.pdf" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                    title="Sebnem Ture Resume">
+                <p>Your browser doesn't support PDF viewing. <a href="sebnem_files/SebnemTureResume.pdf" target="_blank">Download the PDF</a> to view it.</p>
+            </iframe>
+        </div>
+    </div>
+    
+    <!-- Download Links -->
+    <div class="article-wrap" style="text-align: center; line-height: 1.5;">
+        <p style="margin-bottom: 15px;">
+            <a href="sebnem_files/SebnemTureResume.pdf" target="_blank" 
+               style="display: inline-block; padding: 10px 20px; background-color: #0000CD; color: white; text-decoration: none; border-radius: 5px; font-weight: 500; transition: background-color 0.3s;">
+                <i class="fas fa-download" style="margin-right: 8px;"></i>Download Resume (PDF)
+            </a>
+        </p>
+        <p style="margin-bottom: 0; color: #666; font-size: 0.9em;">
+            Click the button above to download or <a href="sebnem_files/SebnemTureResume.pdf" target="_blank">open in new tab</a>
+        </p>
+    </div><!-- /.article-wrap -->
 
 
 
