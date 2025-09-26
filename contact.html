@@ -22,6 +22,106 @@
     .current-page a {
       color: #0000CD !important;
     }
+    
+    /* Contact Form Styling */
+    .contact-form-section {
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 30px;
+      border: 1px solid #e9ecef;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .contact-form-title {
+      color: #333;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0000CD;
+      padding-bottom: 10px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #495057;
+      font-size: 0.95rem;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e9ecef;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      font-family: inherit;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: #0000CD;
+      box-shadow: 0 0 0 3px rgba(0, 0, 205, 0.1);
+    }
+    
+    .form-control:hover {
+      border-color: #6c757d;
+    }
+    
+    .submit-btn {
+      background: linear-gradient(135deg, #0000CD 0%, #4169E1 100%);
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .submit-btn:hover {
+      background: linear-gradient(135deg, #000080 0%, #0000CD 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 205, 0.3);
+    }
+    
+    .submit-btn:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+    
+    .form-status {
+      margin-top: 15px;
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-weight: 500;
+      border-left: 4px solid;
+    }
+    
+    .contact-info-section {
+      margin-bottom: 20px;
+    }
+    
+    .contact-info-table td {
+      padding: 8px 0;
+      vertical-align: top;
+    }
+    
+    .contact-info-table td:first-child {
+      font-weight: 600;
+      color: #495057;
+      width: 110px;
+    }
   </style>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -488,21 +588,58 @@
     
 
         <h1 style="margin-bottom: 30px;">Contact</h1>
-        <div style="margin-top: 20px;">
-        <div class="article-wrap" style="font-size: 90%;line-height:1.5;">
-          <table style="border:0;">
-          <tr><td valign="top" style="width:100px;"><strong>Email:</strong></td><td>
-          </script><a href="mailto:sebnemture2026@u.northwestern.edu" class="author-social" target="_blank">sebnemture2026@u.northwestern.edu</a><noscript>Sorry, you need Javascript on.</noscript>
-          </td></tr>
+        
+        <!-- Contact Information Section -->
+        <div class="contact-info-section">
+          <div class="article-wrap" style="font-size: 90%;line-height:1.5;">
+            <table class="contact-info-table" style="border:0;">
+            <tr><td><strong>Email:</strong></td><td>
+            </script><a href="mailto:sebnemture2026@u.northwestern.edu" class="author-social" target="_blank">sebnemture2026@u.northwestern.edu</a><noscript>Sorry, you need Javascript on.</noscript>
+            </td></tr>
 
-          <tr><td valign="top" style="width:100px;"><strong>Homepage:</strong></td><td><a href="./">sebnemture.github.io</a></td></tr>
+            <tr><td><strong>Homepage:</strong></td><td><a href="./">sebnemture.github.io</a></td></tr>
 
-          <tr><td valign="top" style="width:100px;"><strong>LinkedIn:</strong></td><td><a href="https://www.linkedin.com/in/sebnem-ture-589989150/">linkedin.com/in/sebnem-ture-589989150/</a></td></tr>
+            <tr><td><strong>LinkedIn:</strong></td><td><a href="https://www.linkedin.com/in/sebnem-ture-589989150/">linkedin.com/in/sebnem-ture-589989150/</a></td></tr>
 
-          <tr><td valign="top" style="width:100px;"><strong>Address:</strong></td><td>Weinberg College of Arts & Sciences<br /> Northwestern University - Department of Psychology<br />2029 Sheridan Road - 102 Swift Hall<br />Evanston, IL 60208</td></tr>
-          </table>
-    
-        </div><!-- /.article-wrap -->
+            <tr><td><strong>Address:</strong></td><td>Weinberg College of Arts & Sciences<br /> Northwestern University - Department of Psychology<br />2029 Sheridan Road - 102 Swift Hall<br />Evanston, IL 60208</td></tr>
+            </table>
+          </div><!-- /.article-wrap -->
+        </div><!-- /.contact-info-section -->
+        
+        <!-- Contact Form Section -->
+        <div class="contact-form-section">
+          <h2 class="contact-form-title">Send a Message</h2>
+          <div class="contact-form-container">
+            <form id="contact-form" style="max-width: 600px;">
+              <div class="form-group">
+                <label for="from_name" class="form-label">Name:</label>
+                <input type="text" id="from_name" name="from_name" required class="form-control" placeholder="Dr. Jane Smith / Professor John Doe">
+              </div>
+              
+              <div class="form-group">
+                <label for="reply_to" class="form-label">Email:</label>
+                <input type="email" id="reply_to" name="reply_to" required class="form-control" placeholder="name@university.edu">
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject:</label>
+                <input type="text" id="subject" name="subject" required class="form-control" placeholder="Research Collaboration / PhD Inquiry / Academic Discussion">
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" rows="5" required class="form-control" placeholder="Dear Sebnem,&#10;&#10;I am writing regarding...&#10;&#10;Best regards,"></textarea>
+              </div>
+              
+              <button type="submit" id="submit-btn" class="submit-btn">
+                <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Send Message
+              </button>
+              
+              <div id="form-status" class="form-status" style="display: none;"></div>
+            </form>
+          </div>
+        </div><!-- /contact form section -->
+        
         </div><!-- /spacing wrapper -->
 
   </div>
@@ -596,6 +733,63 @@
     
     
     <script src="sebnem_files/academic.js"></script>
+
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Contact Form Script -->
+    <script type="text/javascript">
+      // Initialize EmailJS with your public key
+      (function() {
+        // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+        emailjs.init('6K2YNucicBTVz1pdZ');
+      })();
+
+      // Handle form submission
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const submitBtn = document.getElementById('submit-btn');
+        const formStatus = document.getElementById('form-status');
+        
+        // Show loading state
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        formStatus.style.display = 'none';
+        
+        // Send email using EmailJS
+        // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
+        emailjs.sendForm('service_ds9s5tj', 'template_0iateem', this)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            
+            // Show success message
+            formStatus.style.display = 'block';
+            formStatus.style.backgroundColor = '#d4edda';
+            formStatus.style.color = '#155724';
+            formStatus.style.borderLeftColor = '#28a745';
+            formStatus.innerHTML = '<i class="fas fa-check-circle" style="margin-right: 8px;"></i>Thank you! Your message has been sent successfully.';
+            
+            // Reset form
+            document.getElementById('contact-form').reset();
+            
+          }, function(error) {
+            console.log('FAILED...', error);
+            
+            // Show error message
+            formStatus.style.display = 'block';
+            formStatus.style.backgroundColor = '#f8d7da';
+            formStatus.style.color = '#721c24';
+            formStatus.style.borderLeftColor = '#dc3545';
+            formStatus.innerHTML = '<i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i>Sorry, there was an error sending your message. Please try again or use the email link above.';
+          })
+          .finally(function() {
+            // Reset button state
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+          });
+      });
+    </script>
 
     
 
