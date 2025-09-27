@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sebnemture.github.io/sitemap.xml
+
+# Allow indexing of all HTML pages
+Allow: /*.html$
+
+# Allow indexing of CSS and JS files for better rendering
+Allow: /sebnem_files/
+
+# Block any temporary or backup files
+Disallow: /*.tmp$
+Disallow: /*.bak$
