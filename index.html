@@ -51,7 +51,7 @@
   <meta property="twitter:description" content="Postdoctoral Scholar at Stanford Graduate School of Business. Research on identity, societal and institutional change, and narrative identity.">
   <meta property="twitter:image" content="https://sebnemture.github.io/sebnem_files/ture_photo.png">
   
-  <meta name="theme-color" content="#69388A">
+  <meta name="theme-color" content="#7527C9">
     <link rel="stylesheet" href="sebnem_files/bootstrap.css">
     <link rel="stylesheet" href="sebnem_files/academicons.css"> 
     <link rel="stylesheet" href="sebnem_files/all.css">
@@ -328,26 +328,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style id="homepage-refresh-design">
-/* Refined editorial homepage: minimal photography-led design.
-   Content unchanged; one landscape photo used for the research question. */
+/* Expressive, photography-led editorial palette. Layout and copy unchanged. */
 :root {
-  --site-purple: #69388A;
-  --site-plum: #3C2945;
-  --site-red: #A22C43;
-  --site-bg: #FFFCFA;
+  --site-purple: #7527C9;
+  --site-plum: #37164E;
+  --site-red: #C02556;
+  --site-bg: #FFFCFB;
 }
 body {
   background: var(--site-bg) !important;
-  color: #34303B;
+  color: #33273D;
   font-family: 'Manrope', sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
 .navbar {
-  background: rgba(255, 252, 250, .98) !important;
-  box-shadow: 0 1px 0 #EEE7EB !important;
+  background: rgba(255, 252, 251, .98) !important;
+  box-shadow: 0 1px 0 #EDE0F4 !important;
 }
 .navbar .navbar-brand {
-  color: #3C2945 !important;
+  color: var(--site-plum) !important;
   font-family: 'Manrope', sans-serif !important;
   font-weight: 750;
   letter-spacing: -.035em;
@@ -355,29 +354,29 @@ body {
 .navbar .navbar-brand::after { content: none !important; }
 .navbar .nav-link { font-family: 'Manrope', sans-serif !important; font-size: .92rem; font-weight: 600; }
 .navbar .current-page a, .navbar .nav-link:hover,
-.navbar .nav-link:focus { color: #69388A !important; }
+.navbar .nav-link:focus { color: var(--site-purple) !important; }
 #profile .portrait {
-  border: 0 !important;
-  box-shadow: none !important;
+  border: 3px solid #EAD8FB !important;
+  box-shadow: 0 7px 20px rgba(84, 31, 120, .075) !important;
 }
 #profile .portrait-title h2 {
   font-family: 'Manrope', sans-serif !important;
   font-size: 1.46rem;
-  color: #3C2945;
+  color: var(--site-plum) !important;
   font-weight: 750;
   letter-spacing: -.045em;
 }
-#profile .portrait-title h3 { font-family: 'Manrope', sans-serif; color: #6A5F6C; font-weight: 500; }
-#profile a.author-social, #profile a.author-social:visited { color: #69388A !important; }
-#profile a.author-social:hover { color: #A22C43 !important; }
+#profile .portrait-title h3 { font-family: 'Manrope', sans-serif; color: #65586D; font-weight: 500; }
+#profile a.author-social, #profile a.author-social:visited { color: var(--site-purple) !important; }
+#profile a.author-social:hover { color: var(--site-red) !important; }
 .home-2026 {
-  --home-accent: #69388A;
-  --home-plum: #3C2945;
-  --home-ink: #34303B;
-  --home-muted: #706873;
-  --home-rule: #EBE4E9;
-  font-family: 'Manrope',sans-serif;
-  color:var(--home-ink);
+  --home-accent: #7527C9;
+  --home-plum: #37164E;
+  --home-ink: #33273D;
+  --home-muted: #695C70;
+  --home-rule: #EDE1F4;
+  font-family: 'Manrope', sans-serif;
+  color: var(--home-ink);
   max-width: 780px;
   counter-reset: none;
 }
@@ -404,9 +403,9 @@ body {
   content: '';
   position:absolute;
   left:0; bottom:0;
-  background: var(--home-accent);
-  width:36px; height:2px;
-  border-radius:0;
+  background: #C02556;
+  width:40px; height:3px;
+  border-radius:1px;
   transform:none;
 }
 .home-2026 #about-me { font-size:1.9rem; }
@@ -418,12 +417,12 @@ body {
 }
 .home-2026 p:last-child { margin-bottom:0; }
 .home-2026 .home-intro {
-  padding: 0 0 0 1.4rem;
+  padding: 1.15rem 1.4rem;
   margin: 0 0 1.5rem;
   border: 0;
-  border-left: 3px solid var(--home-accent);
-  background: transparent;
-  border-radius: 0;
+  border-left: 4px solid var(--home-accent);
+  background: linear-gradient(110deg,#F4EAFF 0%,#FAF6FF 75%,#FFFAFC 100%);
+  border-radius: 0 8px 8px 0;
   box-shadow: none;
   overflow: visible;
 }
@@ -442,7 +441,7 @@ body {
   align-items:flex-end;
   overflow:hidden;
   background-color:#272027;
-  /* Full-resolution Pexels original: no resizing/compression parameters. */
+  /* Original full-size Pexels image: no downsizing or recompression. */
   background-image:
     linear-gradient(90deg, rgba(18,16,21,.73) 0%, rgba(18,16,21,.44) 52%, rgba(18,16,21,.22) 100%),
     url('https://images.pexels.com/photos/26888516/pexels-photo-26888516.jpeg');
@@ -465,7 +464,7 @@ body {
   text-wrap:balance;
   text-shadow:0 1px 12px rgba(0,0,0,.28);
 }
-.home-2026 .home-feature h3::after {display:none !important; content:none !important;}
+.home-2026 .home-feature h3::after { display:none !important; content:none !important; }
 .home-2026 .home-photo-credit {
   font-size: .65rem;
   line-height: 1.4;
@@ -475,21 +474,21 @@ body {
   letter-spacing: .012em;
 }
 .home-2026 .home-photo-credit a { color: inherit !important; text-decoration: none; }
-.home-2026 .home-photo-credit a:hover { color: #69388A !important; text-decoration: underline; }
+.home-2026 .home-photo-credit a:hover { color: var(--home-accent) !important; text-decoration: underline; }
 .home-2026 .home-storytelling-lead {
-  color:var(--home-plum);
+  color: #5D1E91;
   font-size:1rem;
   font-weight:700;
   line-height:1.76;
   margin-bottom:.75rem;
   background:none;
   text-decoration: underline;
-  text-decoration-color: #BD8BAC;
+  text-decoration-color: #D75180;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
   text-decoration-skip-ink: auto;
 }
-.home-2026 .home-invite { color:var(--home-accent); font-weight:650; }
+.home-2026 .home-invite { color:var(--home-accent); font-weight:700; }
 .home-2026 .home-contact-button {
   display:inline-flex;
   align-items:center;
@@ -501,29 +500,29 @@ body {
   font-size:.91rem;
   font-weight:700;
   padding:.76rem 1.32rem;
-  border-radius:4px;
+  border-radius:5px;
   text-decoration:none;
-  box-shadow:none;
-  transition:background .2s ease,transform .2s ease;
+  box-shadow:0 5px 15px rgba(117,39,201,.18);
+  transition:background .2s ease,transform .2s ease,box-shadow .2s ease;
 }
 .home-2026 .home-contact-button:hover,.home-2026 .home-contact-button:focus {
-  background:#482A59;
+  background:#511B91;
   color:white !important;
   text-decoration:none;
   transform:translateY(-1px);
-  box-shadow:none;
+  box-shadow:0 8px 18px rgba(117,39,201,.23);
 }
 .home-2026 a:not(.home-contact-button) {
   color:var(--home-accent);
   text-decoration-thickness:1px;
   text-underline-offset:3px;
 }
-.home-2026 a:not(.home-contact-button):hover { color:#A22C43; }
+.home-2026 a:not(.home-contact-button):hover { color:var(--site-red); }
 @media(max-width:767px) {
   .home-2026 .home-section { margin-bottom:2rem; padding-bottom:1.9rem; }
   .home-2026 #about-me { font-size:1.75rem; }
   .home-2026 .home-heading { font-size:1.33rem; padding-right:0; }
-  .home-2026 .home-intro { padding-left:1.05rem; }
+  .home-2026 .home-intro { padding:1rem 1.05rem; }
   .home-2026 .home-intro p { font-size:1.05rem; }
   .home-2026 .home-feature { padding:1.55rem; min-height:205px; }
   .home-2026 .home-feature h3 { font-size:2.45rem; }
