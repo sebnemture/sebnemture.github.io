@@ -51,7 +51,7 @@
   <meta property="twitter:description" content="Postdoctoral Scholar at Stanford Graduate School of Business. Research on identity, societal and institutional change, and narrative identity.">
   <meta property="twitter:image" content="https://sebnemture.github.io/sebnem_files/ture_photo.png">
   
-  <meta name="theme-color" content="#0000CD">
+  <meta name="theme-color" content="#68408d">
     <link rel="stylesheet" href="sebnem_files/bootstrap.css">
     <link rel="stylesheet" href="sebnem_files/academicons.css"> 
     <link rel="stylesheet" href="sebnem_files/all.css">
@@ -323,32 +323,131 @@
 @font-face {font-family: MJXc-TeX-vec-Bx; src: local('MathJax_Vector'); font-weight: bold}
 @font-face {font-family: MJXc-TeX-vec-Bw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf') format('opentype')}
 </style><style id="homepage-refresh-design">
-  /* Consistent, understated visual system for the homepage */
-  .home-2026 { --home-accent: #2535b4; --home-ink: #242d42; --home-secondary: #536073; --home-rule: #e3e7ee; max-width: 780px; }
-  .home-2026 .home-section { margin: 0 0 2.45rem; padding: 0 0 2.35rem; border-bottom: 1px solid var(--home-rule); }
-  .home-2026 .home-section:last-child { border-bottom: none; padding-bottom: 0; }
-  .home-2026 .home-heading { font-size: 1.55rem; line-height: 1.35; font-weight: 650; letter-spacing: -.02em; color: var(--home-ink); padding: 0 0 .8rem; margin: 0 0 1.35rem; position: relative; }
-  .home-2026 .home-heading::after { content: ""; position: absolute; bottom: 0; left: 0; width: 44px; height: 3px; background: var(--home-accent); border-radius: 2px; }
-  .home-2026 #about-me { font-size: 2rem; }
-  .home-2026 p { font-size: 1rem; line-height: 1.78; color: var(--home-ink); margin: 0 0 1rem; }
+  /* One unified, editorial visual identity for the homepage.
+     All homepage text remains unchanged; these rules are presentation-only. */
+  .home-2026 {
+    --home-accent: #68408d;
+    --home-accent-dark: #4d2d6b;
+    --home-ink: #2d2937;
+    --home-secondary: #5c5567;
+    --home-rule: #e8e1ed;
+    --home-pale: #f8f5fb;
+    max-width: 770px;
+    color: var(--home-ink);
+  }
+  .home-2026 .home-section {
+    margin: 0 0 2.55rem;
+    padding: 0 0 2.15rem;
+    border-bottom: 1px solid var(--home-rule);
+  }
+  .home-2026 .home-section:last-child { border: 0; padding-bottom: 0; margin-bottom: 0; }
+  .home-2026 .home-heading {
+    color: var(--home-ink);
+    font-size: 1.52rem;
+    font-weight: 650;
+    letter-spacing: -0.018em;
+    line-height: 1.35;
+    margin: 0 0 1.42rem;
+    padding: 0 0 0.7rem;
+    position: relative;
+  }
+  .home-2026 .home-heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 42px;
+    background: var(--home-accent);
+    border-radius: 3px;
+  }
+  .home-2026 #about-me { font-size: 1.85rem; }
+  .home-2026 p { color: var(--home-ink); font-size: 1rem; line-height: 1.77; margin: 0 0 1.15rem; }
   .home-2026 p:last-child { margin-bottom: 0; }
-  .home-2026 .home-intro, .home-2026 .home-feature { border-left: 3px solid var(--home-accent); padding: .15rem 0 .15rem 1.3rem; margin: .1rem 0 1.6rem; }
-  .home-2026 .home-intro p { font-size: 1.18rem; line-height: 1.73; letter-spacing: -.006em; }
-  .home-2026 .home-intro strong { font-weight: 650; }
-  .home-2026 .home-background { color: var(--home-secondary); font-size: .98rem; }
-  .home-2026 .home-feature h3 { font-size: 1.65rem; font-weight: 620; letter-spacing: -.025em; line-height: 1.35; color: var(--home-ink); margin: 0; }
-  .home-2026 .home-feature .home-feature-line { font-size: 1.14rem; font-weight: 550; line-height: 1.65; margin: 0; }
-  .home-2026 .home-invite { color: var(--home-accent); font-weight: 550; }
-  .home-2026 .home-contact-button { display: inline-flex; align-items: center; gap: .45rem; margin-top: .5rem; padding: .7rem 1.3rem; border-radius: 6px; background: var(--home-accent); color: #fff !important; text-decoration: none; font-weight: 600; font-size: .95rem; transition: background .15s ease, transform .15s ease; }
-  .home-2026 .home-contact-button:hover, .home-2026 .home-contact-button:focus { background: #1a288c; transform: translateY(-1px); color: #fff !important; text-decoration: none; }
-  .home-2026 a:not(.home-contact-button) { color: var(--home-accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .home-2026 .home-intro {
+    background: var(--home-pale);
+    border-left: 3px solid var(--home-accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1.05rem 1.35rem;
+    margin: 0 0 1.45rem;
+  }
+  .home-2026 .home-intro p {
+    margin: 0;
+    font-size: 1.12rem;
+    line-height: 1.69;
+    letter-spacing: -0.004em;
+  }
+  .home-2026 .home-intro strong { font-weight: 660; color: #372745; }
+  .home-2026 .home-background { color: var(--home-secondary); font-size: .96rem; }
+  .home-2026 .home-feature {
+    background: var(--home-pale);
+    border-left: 3px solid var(--home-accent);
+    border-radius: 0 8px 8px 0;
+    padding: .86rem 1.35rem;
+    margin: .1rem 0 1.48rem;
+  }
+  .home-2026 .home-feature h3 {
+    color: #372745;
+    font-size: 1.38rem;
+    font-weight: 650;
+    letter-spacing: -.02em;
+    line-height: 1.4;
+    margin: 0;
+  }
+  /* Highlight the storytelling sentence within the section, not as a separate card. */
+  .home-2026 .home-storytelling-lead {
+    color: var(--home-accent-dark);
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1.72;
+    margin-bottom: .75rem;
+  }
+  .home-2026 .home-invite { color: var(--home-accent-dark); font-weight: 550; }
+  .home-2026 .home-contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    background: var(--home-accent);
+    color: #fff !important;
+    padding: .72rem 1.2rem;
+    border-radius: 7px;
+    font-size: .94rem;
+    font-weight: 600;
+    margin-top: .55rem;
+    text-decoration: none;
+    transition: background .15s ease, transform .15s ease;
+  }
+  .home-2026 .home-contact-button:hover,
+  .home-2026 .home-contact-button:focus {
+    background: var(--home-accent-dark);
+    transform: translateY(-1px);
+    color: #fff !important;
+    text-decoration: none;
+  }
+  .home-2026 a:not(.home-contact-button) {
+    color: var(--home-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  .home-2026 a:not(.home-contact-button):hover { color: var(--home-accent-dark); }
+  /* Unify the inherited academic theme's blue header/profile accents. */
+  .navbar .current-page a { color: #68408d !important; }
+  .navbar .navbar-brand { color: #372745 !important; }
+  .navbar .nav-link:hover, .navbar .nav-link:focus { color: #68408d !important; }
+  #profile a.author-social, #profile a.author-social:visited { color: #68408d !important; }
+  #profile a.author-social:hover { color: #4d2d6b !important; }
+  #profile .portrait { border: 3px solid #ece4f4; }
+  #profile .portrait-title h2 { color: #302a3b; }
+  #profile .portrait-title h3 { color: #5c5567; }
+  .site-footer a:hover { color: #68408d !important; }
   @media (max-width: 767px) {
-    .home-2026 .home-section { margin-bottom: 2rem; padding-bottom: 1.8rem; }
-    .home-2026 #about-me { font-size: 1.75rem; }
-    .home-2026 .home-heading { font-size: 1.4rem; }
-    .home-2026 .home-intro p { font-size: 1.08rem; }
-    .home-2026 .home-feature h3 { font-size: 1.42rem; }
-    .home-2026 .home-intro, .home-2026 .home-feature { padding-left: 1rem; }
+    .home-2026 .home-section { margin-bottom: 2rem; padding-bottom: 1.7rem; }
+    .home-2026 #about-me { font-size: 1.68rem; }
+    .home-2026 .home-heading { font-size: 1.38rem; }
+    .home-2026 .home-intro, .home-2026 .home-feature { padding: .85rem 1rem; }
+    .home-2026 .home-intro p { font-size: 1.05rem; }
+    .home-2026 .home-feature h3 { font-size: 1.3rem; }
+    .home-2026 .home-storytelling-lead { font-size: 1rem; }
   }
 </style>
 </head>
@@ -551,9 +650,7 @@
 
       <section class="home-section" aria-labelledby="storytelling-section">
         <h2 id="storytelling-section" class="home-heading">Storytelling, Media &amp; Communication</h2>
-        <div class="home-feature">
-          <p class="home-feature-line">Understanding storytelling and lived experience can help us understand audiences and shape messages in media and business.</p>
-        </div>
+        <p class="home-storytelling-lead">Understanding storytelling and lived experience can help us understand audiences and shape messages in media and business.</p>
         <p>Narratives are all around us. Beyond academia, I am passionate about storytelling in its many forms—writing, media, creative projects, and public engagement. I enjoy translating complex ideas into clear, compelling narratives, as well as analyzing how stories resonate with different audiences and shape communication strategies. At the heart of this work is listening to and understanding people through their stories—a perspective I bring to research and to work in communication, media, and business.</p>
       </section>
 
