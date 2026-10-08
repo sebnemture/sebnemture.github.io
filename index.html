@@ -328,7 +328,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style id="homepage-refresh-design">
-/* Homepage 2026: two cohesive framed panels, understated purple editorial style. */
+/* Refined editorial homepage: minimal photography-led design.
+   Content unchanged; one landscape photo used for the research question. */
 :root {
   --site-purple: #69388A;
   --site-plum: #3C2945;
@@ -341,214 +342,179 @@ body {
   font-family: 'Manrope', sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
-.navbar { background: rgba(255,252,250,.98) !important; box-shadow: 0 1px 0 #EEE7EB !important; }
-.navbar .navbar-brand { color: #3C2945 !important; font-family: 'Manrope',sans-serif !important; font-weight: 750; letter-spacing: -.035em; }
+.navbar {
+  background: rgba(255, 252, 250, .98) !important;
+  box-shadow: 0 1px 0 #EEE7EB !important;
+}
+.navbar .navbar-brand {
+  color: #3C2945 !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 750;
+  letter-spacing: -.035em;
+}
 .navbar .navbar-brand::after { content: none !important; }
 .navbar .nav-link { font-family: 'Manrope', sans-serif !important; font-size: .92rem; font-weight: 600; }
-.navbar .current-page a, .navbar .nav-link:hover, .navbar .nav-link:focus { color: #69388A !important; }
-#about { padding-top: 58px; }
-#about > .container { max-width: 1170px; }
-#about .home-2026 {
+.navbar .current-page a, .navbar .nav-link:hover,
+.navbar .nav-link:focus { color: #69388A !important; }
+#profile .portrait {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+#profile .portrait-title h2 {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 1.46rem;
+  color: #3C2945;
+  font-weight: 750;
+  letter-spacing: -.045em;
+}
+#profile .portrait-title h3 { font-family: 'Manrope', sans-serif; color: #6A5F6C; font-weight: 500; }
+#profile a.author-social, #profile a.author-social:visited { color: #69388A !important; }
+#profile a.author-social:hover { color: #A22C43 !important; }
+.home-2026 {
   --home-accent: #69388A;
   --home-plum: #3C2945;
   --home-ink: #34303B;
   --home-muted: #706873;
   --home-rule: #EBE4E9;
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
   font-family: 'Manrope',sans-serif;
-  color: var(--home-ink);
+  color:var(--home-ink);
+  max-width: 780px;
+  counter-reset: none;
 }
-#about .home-hero-card {
-  display: grid;
-  grid-template-columns: minmax(220px, .87fr) minmax(0, 2.1fr);
-  background: #FAF7FC;
-  border: 1px solid #E6DBE9;
-  border-radius: 8px;
-  box-shadow: 0 8px 26px rgba(49,25,60,.045);
-  overflow: hidden;
-  margin-bottom: 3.1rem;
-}
-#about .home-hero-profile {
-  background: #F4EEF8;
-  padding: 2.2rem 1.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  border-right: 1px solid #E8DDED;
-}
-#about .home-hero-profile .portrait {
-  display: block;
-  float: none;
-  width: 166px;
-  height: 166px;
-  max-width: 100%;
-  border: 3px solid #FFFFFF !important;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 6px 18px rgba(56,32,68,.12) !important;
-  margin: 0 auto 1.4rem;
-}
-#about .home-hero-profile .portrait-title { text-align: center; width: 100%; }
-#about .home-hero-profile .portrait-title h2 {
-  font-family: 'Manrope',sans-serif !important;
-  font-weight: 800;
-  font-size: 1.31rem;
-  color: #3C2945 !important;
-  letter-spacing: -.045em;
-  line-height: 1.3;
-  margin: 0 0 .55rem;
-}
-#about .home-2026 .home-profile-position,
-#about .home-2026 .home-profile-school {
-  color: #685D6A;
-  font-size: .89rem;
-  line-height: 1.6;
-  margin: 0 0 .12rem;
-}
-#about .home-2026 .home-profile-position { font-weight: 700; color: #45344C; }
-#about .home-profile-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: .65rem 1.4rem;
-  margin-top: 1.4rem;
-}
-#about .home-profile-links a { font-size: .85rem; font-weight: 700; color: #69388A !important; text-decoration: none; white-space: nowrap; }
-#about .home-profile-links a:hover { color: #A22C43 !important; }
-#about .home-hero-copy { padding: 2.3rem 2.6rem 2.25rem; min-width: 0; }
-#about .home-2026 .home-hero-copy .home-section { border: 0; padding: 0; margin: 0; }
-#about .home-2026 .home-content { width: min(100%, 850px); margin: 0 auto; }
-#about .home-2026 .home-content > .home-section {
+.home-2026 .home-section {
+  counter-increment: none;
   border-bottom: 1px solid var(--home-rule);
-  margin: 0 0 2.6rem;
   padding: 0 0 2.45rem;
+  margin: 0 0 2.5rem;
 }
-#about .home-2026 .home-content > .home-section:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
-#about .home-2026 .home-heading {
-  position: relative;
+.home-2026 .home-section:last-child { border: 0; padding-bottom: 0; margin-bottom: 0; }
+.home-2026 .home-heading {
   font-family: 'Manrope',sans-serif;
-  font-weight: 800;
+  color: var(--home-plum);
   font-size: 1.45rem;
-  letter-spacing: -.045em;
+  font-weight: 750;
   line-height: 1.3;
-  color: #3C2945;
-  padding: 0 0 .85rem;
-  margin: 0 0 1.45rem;
+  letter-spacing: -.04em;
+  margin: 0 0 1.35rem;
+  padding: 0 0 .72rem;
+  position: relative;
 }
-#about .home-2026 .home-heading::before { display: none !important; content: none !important; }
-#about .home-2026 .home-heading::after {
+.home-2026 .home-heading::before { display:none !important; content:none !important; }
+.home-2026 .home-heading::after {
   content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 37px;
-  background: #69388A;
-  border-radius: 0;
-  transform: none;
+  position:absolute;
+  left:0; bottom:0;
+  background: var(--home-accent);
+  width:36px; height:2px;
+  border-radius:0;
+  transform:none;
 }
-#about .home-2026 #about-me { font-size: 1.73rem; }
-#about .home-2026 p { font-size: .97rem; line-height: 1.82; color: #34303B; margin: 0 0 1.15rem; }
-#about .home-2026 p:last-child { margin-bottom: 0; }
-#about .home-2026 .home-intro {
-  padding: 0;
-  margin: 0 0 1.25rem;
+.home-2026 #about-me { font-size:1.9rem; }
+.home-2026 p {
+  font-size:.97rem;
+  line-height:1.86;
+  color:var(--home-ink);
+  margin:0 0 1.22rem;
+}
+.home-2026 p:last-child { margin-bottom:0; }
+.home-2026 .home-intro {
+  padding: 0 0 0 1.4rem;
+  margin: 0 0 1.5rem;
   border: 0;
-  border-radius: 0;
+  border-left: 3px solid var(--home-accent);
   background: transparent;
+  border-radius: 0;
   box-shadow: none;
-}
-#about .home-2026 .home-intro::before { display: none; content: none; }
-#about .home-2026 .home-intro p { font-size: 1.095rem; line-height: 1.71; letter-spacing: -.012em; }
-#about .home-2026 .home-intro strong { color: #3C2945; font-weight: 750; }
-#about .home-2026 .home-background { font-size: .92rem; line-height: 1.79; color: #6C626F; }
-#about .home-2026 .home-feature {
-  display: block;
-  min-height: auto;
-  margin: .1rem 0 1.55rem;
-  padding: 1.55rem 1.9rem;
-  background: #F4EEF8;
-  background-image: none !important;
-  border: 1px solid #E4D8E9;
-  border-left: 4px solid #69388A;
-  border-radius: 7px;
-  box-shadow: none;
-  isolation: auto;
   overflow: visible;
 }
-#about .home-2026 .home-feature::before,
-#about .home-2026 .home-feature::after { display: none !important; content: none !important; }
-#about .home-2026 .home-feature h3 {
-  font-family: 'Instrument Serif', Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(2.05rem,3.2vw,2.67rem);
-  line-height: 1.13;
-  letter-spacing: -.016em;
-  max-width: none;
-  margin: 0;
-  color: #3C2945 !important;
-  text-shadow: none;
+.home-2026 .home-intro::before { display:none; content:none; }
+.home-2026 .home-intro p { font-size:1.15rem; line-height:1.72; letter-spacing:-.014em; }
+.home-2026 .home-intro strong { color:var(--home-plum); font-weight:750; }
+.home-2026 .home-background { color:var(--home-muted); font-size:.94rem; }
+.home-2026 .home-feature {
+  position:relative;
+  border: 0;
+  border-radius: 3px;
+  padding: clamp(2rem, 4.2vw, 3.2rem) clamp(1.4rem, 3.7vw, 2.6rem);
+  margin: .15rem 0 1.7rem;
+  min-height: 252px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+  background-color:#50335D;
+  background-image: none;
+  isolation: initial;
 }
-#about .home-2026 .home-feature h3::after { display: none !important; content: none !important; }
-#about .home-2026 .home-storytelling-lead {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #3C2945;
-  line-height: 1.75;
-  margin-bottom: .8rem;
+.home-2026 .home-feature::before,.home-2026 .home-feature::after { display:none !important; content:none !important; }
+.home-2026 .home-feature h3 {
+  position:relative;
+  color:#FFF9F5 !important;
+  font-family:'Instrument Serif',Georgia,serif;
+  font-size:clamp(2.15rem,4.6vw,3.25rem);
+  font-weight:400;
+  line-height:1.06;
+  letter-spacing:-.013em;
+  max-width:520px;
+  margin:0;
+  text-wrap:balance;
+  text-shadow:0 1px 12px rgba(0,0,0,.28);
+}
+.home-2026 .home-feature h3::after {display:none !important; content:none !important;}
+.home-2026 .home-storytelling-lead {
+  color:var(--home-plum);
+  font-size:1rem;
+  font-weight:700;
+  line-height:1.76;
+  margin-bottom:.75rem;
+  background:none;
   text-decoration: underline;
   text-decoration-color: #BD8BAC;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
   text-decoration-skip-ink: auto;
-  background: none;
 }
-#about .home-2026 .home-invite { color: #69388A; font-weight: 650; }
-#about .home-2026 a:not(.home-contact-button) { color: #69388A; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-#about .home-2026 a:not(.home-contact-button):hover { color: #A22C43; }
-#about .home-2026 .home-contact-button {
-  display: inline-flex;
-  align-items: center;
-  gap: .48rem;
-  background: #69388A;
-  color: #fff !important;
-  font-family: 'Manrope', sans-serif;
-  font-size: .91rem;
-  font-weight: 700;
-  padding: .74rem 1.25rem;
-  margin-top: .55rem;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: none;
-  transition: background .2s ease;
+.home-2026 .home-invite { color:var(--home-accent); font-weight:650; }
+.home-2026 .home-contact-button {
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  margin-top:.55rem;
+  background:var(--home-accent);
+  color:white !important;
+  font-family:'Manrope',sans-serif;
+  font-size:.91rem;
+  font-weight:700;
+  padding:.76rem 1.32rem;
+  border-radius:4px;
+  text-decoration:none;
+  box-shadow:none;
+  transition:background .2s ease,transform .2s ease;
 }
-#about .home-2026 .home-contact-button:hover,
-#about .home-2026 .home-contact-button:focus { background: #482A59; color: #fff !important; text-decoration: none; transform: none; }
-@media(max-width: 850px) {
-  #about .home-hero-card { grid-template-columns: minmax(180px, .8fr) minmax(0, 2fr); }
-  #about .home-hero-profile { padding: 1.8rem 1.1rem; }
-  #about .home-hero-profile .portrait { width: 142px; height: 142px; }
-  #about .home-hero-copy { padding: 1.8rem; }
+.home-2026 .home-contact-button:hover,.home-2026 .home-contact-button:focus {
+  background:#482A59;
+  color:white !important;
+  text-decoration:none;
+  transform:translateY(-1px);
+  box-shadow:none;
 }
-@media(max-width: 650px) {
-  #about { padding-top: 36px; }
-  #about .home-hero-card { grid-template-columns: 1fr; margin-bottom: 2.2rem; }
-  #about .home-hero-profile { border-right: 0; border-bottom: 1px solid #E8DDED; padding: 1.65rem 1.4rem 1.4rem; }
-  #about .home-hero-profile .portrait { width: 132px; height: 132px; margin-bottom: 1rem; }
-  #about .home-profile-links { margin-top: .9rem; }
-  #about .home-hero-copy { padding: 1.55rem; }
-  #about .home-2026 #about-me { font-size: 1.58rem; }
-  #about .home-2026 .home-heading { font-size: 1.35rem; }
-  #about .home-2026 .home-feature { padding: 1.18rem 1.3rem; }
-  #about .home-2026 .home-feature h3 { font-size: 2.15rem; }
-  #about .home-2026 .home-intro p { font-size: 1.035rem; }
-  #about .home-2026 .home-content > .home-section { margin-bottom: 2rem; padding-bottom: 1.9rem; }
+.home-2026 a:not(.home-contact-button) {
+  color:var(--home-accent);
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
 }
-@media(prefers-reduced-motion: reduce) { #about .home-2026 .home-contact-button { transition: none; } }
+.home-2026 a:not(.home-contact-button):hover { color:#A22C43; }
+@media(max-width:767px) {
+  .home-2026 .home-section { margin-bottom:2rem; padding-bottom:1.9rem; }
+  .home-2026 #about-me { font-size:1.75rem; }
+  .home-2026 .home-heading { font-size:1.33rem; padding-right:0; }
+  .home-2026 .home-intro { padding-left:1.05rem; }
+  .home-2026 .home-intro p { font-size:1.05rem; }
+  .home-2026 .home-feature { padding:1.55rem; min-height:205px; }
+  .home-2026 .home-feature h3 { font-size:2.45rem; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .home-2026 .home-contact-button { transition:none; }
+}
 </style>
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71"><div id="MathJax_Message" style="display: none;"></div>
@@ -693,21 +659,44 @@ body {
 
 
 
-<div class="home-2026" itemscope="" itemtype="http://schema.org/Person">
-  <section class="home-hero-card" aria-label="Profile and About Me">
-    <div class="home-hero-profile" id="profile">
-      <img class="portrait" src="sebnem_files/ture_photo.png" itemprop="image" alt="Portrait of Sebnem Ture">
+<div class="row" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      <img class="portrait" src="sebnem_files/ture_photo.png" itemprop="image" alt="Avatar">
+      
+
       <div class="portrait-title">
         <h2 itemprop="name">Sebnem Ture, PhD</h2>
-        <p class="home-profile-position" itemprop="jobTitle">Postdoctoral Scholar</p>
-        <p class="home-profile-school" itemprop="worksFor">Stanford Graduate School of Business</p>
-      </div>
-      <div class="home-profile-links">
-        <a href="https://www.linkedin.com/in/sebnem-ture-589989150/" class="author-social" target="_blank" rel="noopener" itemprop="sameAs"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
-        <a href="mailto:sebnemture2026@u.northwestern.edu" class="author-social" itemprop="email"><i class="fas fa-envelope-open-text" aria-hidden="true"></i> Email</a>
-      </div>
+        <h3 itemprop="jobTitle">Postdoctoral Scholar</h3>
+
+        
+        
+
+        
+        <h3 itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
+          
+          <span itemprop="name">Stanford Graduate School of Business</span>
+          
+        </h3>
+        
+      
+
+          <p align="left">
+          <span style="padding-left:75px"><a href="https://www.linkedin.com/in/sebnem-ture-589989150/" class="author-social" target="_blank" itemprop="sameAs"><i class="fab fa-linkedin-in"></i>&nbsp; LinkedIn</a><br />
+
+            <span style="padding-left:75px"><script type="text/javascript" language="javascript">
+          </script><a href="mailto:sebnemture2026@u.northwestern.edu" class="author-social" target="_blank" itemprop="email"><i class="fas fa-envelope-open-text"></i>&nbsp; Email</a><noscript>Sorry, you need Javascript on.</noscript>
+          </p>
+          <link itemprop="url" href="http://sebnemture.github.io/">
+      </div> 
+
     </div>
-    <div class="home-hero-copy" itemprop="description">
+  </div>
+    <div class="col-12 col-lg-8" itemprop="description">
+
+    <div class="home-2026">
       <section class="home-section home-about" aria-labelledby="about-me">
         <h1 id="about-me" class="home-heading">About Me</h1>
         <div class="home-intro">
@@ -715,10 +704,8 @@ body {
         </div>
         <p class="home-background">I received my PhD in Psychology (Personality, Development, and Health) from Northwestern University, where I worked closely with the <a href="https://sites.northwestern.edu/studyoflivesresearchgroup/">Study of Lives Research Group</a> (PI: <a href="https://psychology.northwestern.edu/people/faculty/core/profiles/dan-mcadams.html">Professor Dan McAdams</a>) and the <a href="https://haaselab.sesp.northwestern.edu/">Life Span Development Lab</a> (PI: <a href="https://sesp.northwestern.edu/people/faculty/claudia-haase.html">Professor Claudia Haase</a>). Before Northwestern, I completed my BA in Psychology at Bilkent University in Turkey, graduating as valedictorian.</p>
       </section>
-    </div>
-  </section>
-  <div class="home-content">
-    <section class="home-section" aria-labelledby="research-identity">
+
+      <section class="home-section" aria-labelledby="research-identity">
         <h2 id="research-identity" class="home-heading">Research Identity</h2>
         <div class="home-feature">
           <h3>How do we become who we are?</h3>
@@ -739,8 +726,20 @@ body {
         <p>Growing up in Turkey, I was always curious about cultural exchange and the many ways people experience and understand the world. I enjoy exploring new places, creative projects, and reflexive conversations. Music, writing, and walking are everyday practices that keep me grounded. I deeply value connection and try to bring a human-centered perspective to both my work and life.</p>
         <a class="home-contact-button" href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch</a>
       </section>
+    </div>
+
+
+    </div>
   </div>
 </div>
+
+    <div class="row">
+
+
+    </div>
+  </div>
+</div>
+
     </div>
   </section>
   
