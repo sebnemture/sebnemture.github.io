@@ -511,17 +511,22 @@ body {
   text-underline-offset: 4px;
   text-decoration-skip-ink: auto;
 }
-/* Understated image-and-credit treatment for the storytelling section.
-   The Pexels full-size JPEG is served directly, without export or compression. */
-.home-2026 .home-storytelling-figure { margin:1.45rem 0 0; width:100%; padding:0; }
+/* Preserve the full vertical image at native proportions: no cover crop, forced aspect ratio,
+   enlargement, re-encoding, or resizing parameters on the original Pexels JPEG URL. */
+.home-2026 .home-storytelling-figure {
+  margin:1.65rem auto 0;
+  width:min(100%, 390px);
+  padding:0;
+}
 .home-2026 .home-storytelling-figure img {
   display:block;
   width:100%;
+  max-width:100%;
   height:auto;
-  aspect-ratio: 1.6 / 1;
-  object-fit:cover;
-  object-position:center 40%;
-  border-radius:3px;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center;
+  border-radius:2px;
   border:0;
   box-shadow:none;
 }
@@ -537,7 +542,7 @@ body {
 .home-2026 .home-storytelling-credit a { color:inherit !important; text-decoration:none; }
 .home-2026 .home-storytelling-credit a:hover { color:var(--home-accent) !important; text-decoration:underline; }
 @media(max-width:600px) {
-  .home-2026 .home-storytelling-figure img { aspect-ratio:1.38 / 1; object-position:center 40%; }
+  .home-2026 .home-storytelling-figure { width:min(84%, 335px); }
 }
 .home-2026 .home-invite { color:var(--home-accent); font-weight:700; }
 .home-2026 .home-contact-button {
