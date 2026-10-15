@@ -511,6 +511,34 @@ body {
   text-underline-offset: 4px;
   text-decoration-skip-ink: auto;
 }
+/* Understated image-and-credit treatment for the storytelling section.
+   The Pexels full-size JPEG is served directly, without export or compression. */
+.home-2026 .home-storytelling-figure { margin:1.45rem 0 0; width:100%; padding:0; }
+.home-2026 .home-storytelling-figure img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio: 1.6 / 1;
+  object-fit:cover;
+  object-position:center 40%;
+  border-radius:3px;
+  border:0;
+  box-shadow:none;
+}
+.home-2026 .home-storytelling-credit {
+  display:block;
+  color:#817986;
+  font-size:.65rem;
+  line-height:1.4;
+  letter-spacing:.012em;
+  text-align:right;
+  margin:.42rem 0 0;
+}
+.home-2026 .home-storytelling-credit a { color:inherit !important; text-decoration:none; }
+.home-2026 .home-storytelling-credit a:hover { color:var(--home-accent) !important; text-decoration:underline; }
+@media(max-width:600px) {
+  .home-2026 .home-storytelling-figure img { aspect-ratio:1.38 / 1; object-position:center 40%; }
+}
 .home-2026 .home-invite { color:var(--home-accent); font-weight:700; }
 .home-2026 .home-contact-button {
   display:inline-flex;
@@ -759,6 +787,14 @@ body {
         <h2 id="storytelling-section" class="home-heading">Storytelling, Media &amp; Communication</h2>
         <p class="home-storytelling-lead">Exploring storytelling and lived experience offers insight into audiences and helps shape messages in media and business.</p>
         <p>Narratives are all around us. Beyond academia, I am passionate about storytelling in its many forms—writing, media, creative projects, and public engagement. I enjoy translating complex ideas into clear, compelling narratives, as well as analyzing how stories resonate with different audiences and shape communication strategies. At the heart of this work is listening to and understanding people through their stories—a perspective I bring to research and to work in communication, media, and business.</p>
+        <figure class="home-storytelling-figure">
+          <img
+            src="https://images.pexels.com/photos/3831761/pexels-photo-3831761.jpeg"
+            alt="The words Tell Your Story cast as a shadow on a concrete wall"
+            width="1365" height="2048"
+            loading="lazy" decoding="async">
+          <figcaption class="home-storytelling-credit">Photo: <a href="https://www.pexels.com/@cottonbro/" target="_blank" rel="noopener noreferrer">cottonbro studio</a> / <a href="https://www.pexels.com/photo/sign-spray-painted-on-concrete-wall-3831761/" target="_blank" rel="noopener noreferrer">Pexels</a></figcaption>
+        </figure>
       </section>
 
       <section class="home-section home-connect" aria-labelledby="connect-section">
