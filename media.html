@@ -317,10 +317,7 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
 .media-editorial .media-card-link:hover { color:inherit !important; }
 .media-editorial .media-card a:focus-visible { outline:3px solid #7527C9; outline-offset:3px; }
 .media-editorial .media-cover { width:100%; aspect-ratio: 1.55; position:relative; overflow:hidden; background:#3D284F; }
-.media-editorial .media-cover-design { position:absolute; inset:0; display:flex; flex-direction:column; align-items:flex-start; justify-content:space-between; padding:1.5rem; background:linear-gradient(143deg,#48305D 0%,#735193 70%,#AA7D9D 100%); color:#FFF9FC; }
-.media-editorial .media-cover-design>span { font-size:.67rem; line-height:1.4; letter-spacing:.15em; font-weight:800; }
-.media-editorial .media-cover-design strong { font-family:'Instrument Serif',Georgia,serif; font-size:clamp(1.85rem,3.3vw,2.75rem); font-weight:400; max-width:90%; line-height:1.02; }
-.media-editorial .media-cover-design small { font-family:'Manrope',sans-serif; font-size:.72rem; opacity:.76; letter-spacing:.02em; }
+.media-editorial .media-cover-design { position:absolute; inset:0; background:linear-gradient(143deg,#48305D 0%,#735193 70%,#AA7D9D 100%); }
 .media-editorial .media-cover img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; position:absolute; inset:0; background:transparent; transition:transform .38s ease; }
 .media-editorial .media-card:hover .media-cover img { transform:scale(1.045); }
 .media-editorial .media-card-copy { flex:1; padding:1.18rem 1.25rem 1.3rem; display:flex; flex-direction:column; align-items:flex-start; }
@@ -330,13 +327,13 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
 .media-editorial .media-read span { font-size:1.03em; margin-left:.15rem; }
 .media-editorial .media-featured .media-card-link { flex-direction:row; min-height:290px; }
 .media-editorial .media-featured .media-cover { flex:0 0 49%; aspect-ratio:auto; min-height:300px; }
-.media-editorial .media-featured .media-cover-design { background:linear-gradient(125deg,#39204A 0%,#684376 73%,#AF7A93 100%); padding:1.7rem; }
-.media-editorial .media-featured .media-cover-design strong { font-size:clamp(2rem,3.5vw,3rem); }
+.media-editorial .media-featured .media-cover-design { background:linear-gradient(125deg,#39204A 0%,#684376 73%,#AF7A93 100%); }
 .media-editorial .media-featured .media-card-copy { padding:1.85rem 1.5rem 1.75rem; justify-content:center; }
 .media-editorial .media-featured .media-card-copy h2 { color:#37164E; font-family:'Instrument Serif',Georgia,serif; font-size:clamp(1.95rem,3.5vw,2.55rem); font-weight:400; line-height:1.06; letter-spacing:-.017em; margin:.8rem 0 1.05rem; }
 .media-editorial .media-featured .media-card-copy>p { color:#6B5E70; font-size:.87rem; line-height:1.75; margin:0 0 1.25rem; }
 .media-editorial .media-featured .media-read { margin-top:.25rem; }
 .media-editorial .media-image-credit { font-size:.64rem; color:#908395; line-height:1.5; margin-top:.85rem; }
+.media-editorial .media-photo-credit { font-size:.64rem; color:#94899B; line-height:1.5; margin-top:.7rem; }
 .media-editorial .media-collection { margin:0 0 2.4rem; }
 .media-editorial .media-subheading { position:relative; color:#37164E; font-size:1.35rem; font-weight:750; letter-spacing:-.035em; padding-bottom:.75rem; margin:0 0 1.3rem; }
 .media-editorial .media-subheading::before { content:none !important; }
@@ -561,11 +558,7 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
   <article class="media-card media-featured">
     <a class="media-card-link" href="https://psyche.co/ideas/do-you-weave-historical-events-into-your-own-life-story" target="_blank" rel="noopener noreferrer">
       <div class="media-cover">
-        <div class="media-cover-design" aria-hidden="true">
-          <span>PSYCHE · THE SELF</span>
-          <strong>History becomes personal.</strong>
-          <small>Psyche Ideas</small>
-        </div>
+        <div class="media-cover-design" aria-hidden="true"></div>
         <img src="https://images.aeonmedia.co/images/94e2c62b-a3f1-477e-b2ca-5c6c2ff78a6b/sz-final-2023-02-19t223226z_872783323_rc2jez99akbx_rtrmadp_3_turkey-quake.jpg?cropHeight=1854&amp;cropWidth=3296&amp;format=auto&amp;left=0&amp;quality=75&amp;top=172&amp;width=3840" alt="Collapsed building in Antakya, Türkiye, following the 2023 earthquake; photo by Nir Elias / Reuters" decoding="async" fetchpriority="high" referrerpolicy="no-referrer" onerror="this.style.display='none'">
       </div>
       <div class="media-card-copy">
@@ -583,48 +576,50 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
     <div class="media-grid"><article class="media-card media-love">
   <a class="media-card-link" href="https://www.psychologytoday.com/us/blog/stories-we-tell-lives-we-lead/202502/the-dark-side-of-love-desiring-the-unattainable" target="_blank" rel="noopener noreferrer">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>RELATIONSHIPS</span><strong>Love &amp; Longing</strong><small>Psychology Today</small></div>
-      <img src="https://api.microlink.io/?url=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Fblog%2Fstories-we-tell-lives-we-lead%2F202502%2Fthe-dark-side-of-love-desiring-the-unattainable&amp;embed=image.url" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+      <div class="media-cover-design" aria-hidden="true"></div>
+      <img src="https://cdn2.psychologytoday.com/assets/styles/article_inline_half_caption/public/field_blog_entry_images/2025-02/stephan-valentin-W6ukZyCANG0-unsplash.jpg?itok=TUwXeUaA" alt="Colorful neon signs reading need, desire, dream and love" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
     </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">Psychology Today · Feb 2025</span>
       <h3>The Dark Side of Love: Desiring the Unattainable</h3>
       <span class="media-read">Read article <span aria-hidden="true">↗</span></span>
+      <span class="media-photo-credit">Photo: Stephan Valentin / Unsplash</span>
     </div>
   </a>
 </article>
 <article class="media-card media-connect">
   <a class="media-card-link" href="https://www.psychologytoday.com/us/blog/stories-we-tell-lives-we-lead/202502/why-do-we-click-the-psychology-of-instant-connection" target="_blank" rel="noopener noreferrer">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>CONNECTION</span><strong>Why We Click</strong><small>Psychology Today</small></div>
-      <img src="https://api.microlink.io/?url=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Fblog%2Fstories-we-tell-lives-we-lead%2F202502%2Fwhy-do-we-click-the-psychology-of-instant-connection&amp;embed=image.url" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+      <div class="media-cover-design" aria-hidden="true"></div>
+      <img src="https://cdn2.psychologytoday.com/assets/styles/article_inline_half_caption/public/field_blog_entry_images/2025-02/Friends_Look%20Studio_Shutterstock_2051429453.jpg?itok=qi4aE13h" alt="Two friends lying together, photographed from above" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
     </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">Psychology Today · Feb 2025</span>
       <h3>Why We Click: The Psychology of Instant Connection</h3>
       <span class="media-read">Read article <span aria-hidden="true">↗</span></span>
+      <span class="media-photo-credit">Photo: Look Studio / Shutterstock</span>
     </div>
   </a>
 </article>
 <article class="media-card media-nostalgia">
   <a class="media-card-link" href="https://www.psychologytoday.com/us/blog/stories-we-tell-lives-we-lead/202410/the-story-of-that-thing-you-loved-doing-as-a-kid-but-quit" target="_blank" rel="noopener noreferrer">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>NOSTALGIA</span><strong>Past Passions</strong><small>Psychology Today</small></div>
-      <img src="https://api.microlink.io/?url=https%3A%2F%2Fwww.psychologytoday.com%2Fus%2Fblog%2Fstories-we-tell-lives-we-lead%2F202410%2Fthe-story-of-that-thing-you-loved-doing-as-a-kid-but-quit&amp;embed=image.url" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+      <div class="media-cover-design" aria-hidden="true"></div>
+      <img src="https://cdn2.psychologytoday.com/assets/styles/article_inline_half_caption/public/field_blog_entry_images/2024-10/pexels-nappy-936030.jpg?itok=LfP1quaF" alt="Photograph by Nappy / Pexels, as published with the essay" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
     </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">Psychology Today · Oct 2024</span>
       <h3>The Story of That Thing You Loved Doing as a Kid—But Quit</h3>
       <span class="media-read">Read article <span aria-hidden="true">↗</span></span>
+      <span class="media-photo-credit">Photo: Nappy / Pexels</span>
     </div>
   </a>
 </article>
 <article class="media-card media-music">
   <a class="media-card-link" href="http://bilnews.bilkent.edu.tr/what-does-your-spotify-profile-say-about-you/" target="_blank" rel="noopener noreferrer">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>MUSIC &amp; IDENTITY</span><strong>Our Listening Lives</strong><small>Bilkent News</small></div>
-      <img src="https://api.microlink.io/?url=http%3A%2F%2Fbilnews.bilkent.edu.tr%2Fwhat-does-your-spotify-profile-say-about-you%2F&amp;embed=image.url" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-    </div>
+      <div class="media-cover-design" aria-hidden="true"></div>
+      </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">Bilkent News</span>
       <h3>What Does Your Spotify Profile Say About You?</h3>
@@ -635,9 +630,8 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
 <article class="media-card media-city">
   <a class="media-card-link" href="http://bilnews.bilkent.edu.tr/sculptures-elections-and-the-face-of-ankara/" target="_blank" rel="noopener noreferrer">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>ART &amp; SOCIETY</span><strong>The Face of a City</strong><small>Bilkent News</small></div>
-      <img src="https://api.microlink.io/?url=http%3A%2F%2Fbilnews.bilkent.edu.tr%2Fsculptures-elections-and-the-face-of-ankara%2F&amp;embed=image.url" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-    </div>
+      <div class="media-cover-design" aria-hidden="true"></div>
+      </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">Bilkent News</span>
       <h3>Sculptures, Elections, and the Face of Ankara</h3>
@@ -648,9 +642,8 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
 <article class="media-card media-college">
   <a class="media-card-link" href="http://bilnews.bilkent.edu.tr/in-love-and-in-college-romantic-relationships-in-emerging-adulthood/" target="_blank" rel="noopener noreferrer">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>RELATIONSHIPS</span><strong>Love in College</strong><small>Bilkent News</small></div>
-      <img src="https://api.microlink.io/?url=http%3A%2F%2Fbilnews.bilkent.edu.tr%2Fin-love-and-in-college-romantic-relationships-in-emerging-adulthood%2F&amp;embed=image.url" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-    </div>
+      <div class="media-cover-design" aria-hidden="true"></div>
+      </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">Bilkent News</span>
       <h3>In Love and in College: Romantic Relationships in Emerging Adulthood</h3>
@@ -661,9 +654,8 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
 <article class="media-card media-orchestra">
   <a class="media-card-link" href="http://bilnews.bilkent.edu.tr/bso-opens-its-25th-season-with-a-live-broadcast/" target="_blank" rel="noopener noreferrer">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>MUSIC</span><strong>Live from Bilkent</strong><small>Bilkent News</small></div>
-      <img src="https://api.microlink.io/?url=http%3A%2F%2Fbilnews.bilkent.edu.tr%2Fbso-opens-its-25th-season-with-a-live-broadcast%2F&amp;embed=image.url" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">
-    </div>
+      <div class="media-cover-design" aria-hidden="true"></div>
+      </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">Bilkent News</span>
       <h3>BSO Opens Its 25th Season with a Live Broadcast</h3>
@@ -676,7 +668,7 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
     <h2 id="media-print-heading" class="media-subheading">Magazine Writing</h2>
     <div class="media-grid"><article class="media-card media-print media-print">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>BEAUTY</span><strong>Curls & Care</strong><small>InStyle Türkiye</small></div>
+      <div class="media-cover-design" aria-hidden="true"></div>
     </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">InStyle Türkiye · Print</span>
@@ -686,7 +678,7 @@ body { background:#FFFCFB !important; color:#33273D; font-family:'Manrope',-appl
   </article>
 <article class="media-card media-hygge media-print">
     <div class="media-cover">
-      <div class="media-cover-design" aria-hidden="true"><span>LIFESTYLE</span><strong>The Art of Hygge</strong><small>InStyle Türkiye</small></div>
+      <div class="media-cover-design" aria-hidden="true"></div>
     </div>
     <div class="media-card-copy">
       <span class="media-eyebrow">InStyle Türkiye · Print</span>
